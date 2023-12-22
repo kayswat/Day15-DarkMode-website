@@ -1,0 +1,109 @@
+body{
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    background-color: var(--background-color);
+}
+
+:root{
+--background-color: #ffffff;
+--button-color: #ffffff
+}
+
+.darkMode{
+--background-color:  #000000;
+--button-color: #000000
+}
+
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.vehincles{
+    display: flex;
+    width: 60%;
+}
+.content{
+    color:hsla(0, 0%, 100%, 0.75);
+    margin: 10px;
+}
+.headings{
+    color: hsl(0, 0%, 95%);
+    margin: 10px;
+}
+img{
+    width:50px;
+    margin: 20px 0 5px 10px;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+}
+.luxury{
+    background-color: hsl(179, 47%, 66%);
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+}
+
+
+/*styling the button - start*/
+button{
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    font: inherit;
+    transition: 0.3s ease-in-out;
+}
+.sedansbtn{
+color: hsl(31, 77%, 52%);
+}
+.suvsbtn{
+    color: hsl(184, 100%, 22%);
+}
+.luxurybtn{
+    color: hsl(179, 47%, 66%);
+}
+button:hover{
+    background-color: inherit;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+    /*styling the button - end*/
+
+@media (max-width: 768px) {
+	
+    .vehincles{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .sedans{
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .suvs{
+        border-radius: 0;
+        
+    }
+    .luxury{
+        border-radius: 0;
+    }
+
+}
+
+.switch img{
+   float: right;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
